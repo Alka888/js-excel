@@ -1,0 +1,24 @@
+{
+  "name": "js-excel",
+  "version": "1.0.0",
+  "description": "Pure Javscript Excel Application",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alka888/js-excel.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "excel"
+  ],
+  "author": "Alena <alicom19900215@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alka888/js-excel/issues"
+  },
+  "homepage": "https://github.com/Alka888/js-excel#readme"
+}
