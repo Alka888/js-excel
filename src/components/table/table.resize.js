@@ -1,4 +1,4 @@
-import {$} from '@core/dom';
+import {$} from '@core/dom'
 
 export function resizeHandler($root, event) {
   const $resizer = $(event.target)
@@ -15,7 +15,6 @@ export function resizeHandler($root, event) {
 
   document.onmousemove = e => {
     if (type === 'col') {
-      // current cursor position
       const delta = e.pageX - coords.right
       value = coords.width + delta
       $resizer.css({right: -delta + 'px'})
@@ -28,14 +27,14 @@ export function resizeHandler($root, event) {
 
   document.onmouseup = () => {
     document.onmousemove = null
-    document.onmoseup = null
+    document.onmouseup = null
 
-    if ( type === 'col') {
-      $parent.css({width: value +'px'})
+    if (type === 'col') {
+      $parent.css({width: value + 'px'})
       $root.findAll(`[data-col="${$parent.data.col}"]`)
           .forEach(el => el.style.width = value + 'px')
     } else {
-      $parent.css({height: value +'px'})
+      $parent.css({height: value + 'px'})
     }
 
     $resizer.css({
